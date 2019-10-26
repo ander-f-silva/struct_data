@@ -14,3 +14,15 @@ Lista* cria_lista(){
         li->qtd = 0;
     return  li;
 }
+
+void libera_lista(Lista* li){
+    free(li);
+}
+
+int tamanho_lista(Lista* li){
+    if(li == NULL)
+        return -1;
+    else
+        return li->qtd;
+}
+
